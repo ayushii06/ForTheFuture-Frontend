@@ -1,0 +1,49 @@
+.time,.day{
+    font-size: 22px;
+    display: flex;
+    margin: auto;
+    gap: 35px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 27px;
+}
+
+.time{
+    position: relative;
+    left: 49px;
+    gap: 22px;
+    color: white;
+}
+
+.time>p{
+    font-weight: 800;
+}
+
+.tt-container{
+    border-radius: 5px;
+    background: #8E61AF;
+    padding: 37px;
+    /* height: 49vh; */
+    width: 89%;
+    margin: 11vh auto;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.day-name{
+    font-weight: 700;
+    font-size: 28px;
+color: white;
+}
+
+.task{
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 2px;
+    background: white;
+    padding: 8px;
+    width: 5vw;
+}

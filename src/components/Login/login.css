@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #8e61af;
+    padding: 6vh 0vh;
+    text-align: center;
+    margin: 55px auto;
+    width: 56vw;
+}
+
+.login-heading{
+    font-size: 38px;
+    font-family: fantasy;
+    text-align: center;
+    font-weight: 100;
+    padding: 39px 0px 0px;
+    color: black;
+}
+
+#email, #name,#number, #password{
+    background: white;
+    width: 29vw;
+    font-size: 20px;
+    padding: 11px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+
+.SignUp{
+    margin: 5vh;
+    font-size: 26px;
+}
+
+button{
+     border: none;
+   
+}
+
+button:hover{
+    background-color: #393939;
+    border-color: #393939;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer{
+    margin: 17px;
+    text-align: center;
+}
+
+.register{
+    margin: 12px;
+    text-decoration: underline;
+}
+
+.register>a{
+    color: #df648b;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.form-group{
+
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    width: 53vw;
+}
+
+label{
+    color: white;
+    font-weight: 600;
+    font-size: 31px;
+    margin: 3vh auto;
+
+}

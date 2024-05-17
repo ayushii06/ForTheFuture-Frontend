@@ -1,0 +1,13 @@
+.gallery{
+    align-items: center;
+    /* padding: 7vh; */
+    justify-content: space-evenly;
+    margin: 12vh;
+    gap: 58px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.gallery>img{
+    width: 16vw;
+}
