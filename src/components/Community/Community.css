@@ -107,3 +107,56 @@ write-post {
   main{
     padding: 21px;
   }
+
+  .tweet-action:hover{
+    cursor: pointer;
+  }
+
+  .toggle{
+    box-shadow: 0px 2px 6px black;
+    border-radius: 9px;
+    border: none;
+    top: 14vh;
+    background: #444444;
+    display: flex;
+    width: 46vw;
+    flex-direction: column;
+    height: 32vw;
+    position: fixed;
+    left: 16vw;
+  }
+
+  .write-post-toggle{
+    flex-direction: column;
+    align-items: center;
+  }
+.write-post-toggle>textarea{
+  margin-bottom: 0px;
+  width: 42vw;
+  /* border-bottom: 3px solid white; */
+  height: 33vh;
+  background: none;
+  color: white;
+}
+
+.write-post-btn{
+  position:absolute;
+}
+
+.comment-section{
+  background: #e0dede;
+    padding: 12px;
+    margin: 22px 0px;
+    border-radius: 5px;
+}
+
+.comment-section>.user{
+  font-weight: 600;
+  color: #b97800;
+}
+
+.comment{
+  font-size: 18px;
+    width: 57vw;
+
+}
