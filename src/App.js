@@ -11,7 +11,8 @@ import Explore from "./components/Explore/Explore";
 import Quiz from "./components/Quiz/Quiz";
 import Resource from "./components/Resource/Resource";
 import QuizPg from "./components/QuizPage/QuizPg";
-
+import Community from "./components/Community/Community";
+import User from './components/User/User'
 
 
 function App() {
@@ -24,10 +25,12 @@ function App() {
     <Route exact path='/about' element={<About/>}/>
     <Route exact path='/register' element={<Register/>}/>
     <Route exact path='/login' element={<Login/>}/>
+    <Route exact path='/user' element={<User/>}/>
     <Route exact path='/explore' element={<Explore style={{a:'white'}}/>}/>
     <Route exact path='/quiz' element={<Quiz/>}/>
     <Route exact path='/resource' element={<Resource/>}/>
     <Route exact path='/questions' element={<QuizPg/>}/>
+    <Route exact path='/community' element={<Community/>}/>
    </Routes>
    <Footer/>
    </BrowserRouter>

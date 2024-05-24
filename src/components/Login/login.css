@@ -20,7 +20,7 @@
     color: black;
 }
 
-#email, #name,#number, #password{
+#email, #name,#number,#username, #password{
     background: white;
     width: 29vw;
     font-size: 20px;

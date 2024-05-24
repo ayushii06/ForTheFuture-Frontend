@@ -1,0 +1,55 @@
+.user-container{
+    padding: 55px 32px;
+}
+
+.user-container>p{
+    text-align: center;
+    font-size: 33px;
+
+}
+
+.main-heading{
+    display: flex;
+    align-items: center;
+    margin: 7vh auto;
+    justify-content: space-between;
+    gap: 40px;
+    width: 38vw;
+}
+
+.upper-heading>h5{
+    color: #2874f0;
+
+}
+
+.upper-heading>h5:hover{
+    cursor: pointer;
+}
+
+.upper-heading{
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    margin: 14px 0px;
+}
+
+.main-heading>input{
+    border-radius: 2px;
+    width: 19vw;
+    outline: none;
+    padding: 11px;
+    font-size: 17px;
+    margin: 0px 8px 0px 0px;
+    background-color: #fafafa;
+}
+
+.main-heading>input:hover{
+    cursor: not-allowed; 
+}
+
+.bold-black{
+    color: black;
+    text-shadow: none;
+    font-size: 22px;
+    font-weight: 400;
+}

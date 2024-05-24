@@ -5,7 +5,7 @@ import { Link, useNavigate} from 'react-router-dom'
 const Login=()=> {
   let navigate = useNavigate();
   function handleClick(){
-    navigate('/input')
+    navigate('/community')
   }
   
   const [credentials, setCredentials] = useState({ email: "", password: "" })
@@ -13,8 +13,8 @@ const Login=()=> {
       setCredentials({ ...credentials, [e.target.name]: e.target.value })
   }
   const handleSubmit = async (e) => {
-      e.preventDefault();
-      const response = await fetch("http://localhost:5050/api/shico/user/login", {
+  
+      const response = await fetch("http://localhost:10000/api/v1/login", {
           method: "POST",
           headers: {
               "Content-Type": "application/json",
@@ -29,10 +29,10 @@ const Login=()=> {
           //Save the auth taken and redirect
           
           localStorage.setItem('token', json.token)
-          localStorage.setItem('name', json.user.name)
-          localStorage.setItem('email', json.user.email)
-          localStorage.setItem('password', json.user.password)
-          localStorage.setItem('mobile', json.user.mobile)
+          localStorage.setItem('username', json.user.username)
+        //   localStorage.setItem('email', json.user.email)
+        //   localStorage.setItem('password', json.user.password)
+        //   localStorage.setItem('mobile', json.user.mobile)
           console.log(json.token)
           navigate("/")
 
@@ -51,7 +51,7 @@ const Login=()=> {
   
     <div className="flex column container login-container">
        
-        <form action="post" onSubmit={handleSubmit}>
+        <form action="post" >
            <div style={{width: "30vw",margin:"16px auto"}} className="form-group">
                 <input type="email" id="email" value={credentials.email} onChange={onChange} name="email" placeholder="Enter your email"/>
                 </div>
@@ -64,7 +64,7 @@ const Login=()=> {
         
     </div>
     <div className="footer">
-    <button className="text-center btns font-bold" to="/register" role="button">Verify</button>
+    <button className="text-center btns font-bold" to="/register" role="button" onClick={handleSubmit}>Verify</button>
     <p style={{margin:"6vh auto 14vh",
     fontSize: "22px"}} className="text-center font-light">Don't have an account yet ?<span className='login-link font-bold' onClick={handleClick}>Register here</span></p>
         </div>

@@ -1,0 +1,109 @@
+.app{
+    background-color: #f5f8fa;
+}
+write-post {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+ 
+  
+  .tweet-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+    padding: 1rem;
+    width:66vw;
+  }
+  
+  .tweet-write-post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+  }
+  
+  .tweet-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  .tweet-username {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  .tweet-timestamp {
+    color: #6b7c93;
+  }
+  
+  .tweet-content {
+    margin: 2.5rem auto;
+    font-size: 22px;
+
+  }
+  
+  .tweet-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    font-size: 23px;
+  }
+  
+  .tweet-action {
+    display: flex;
+    align-items: center;
+    color: #6b7c93;
+    margin-right: 1rem;
+    gap: 10px;
+  }
+  
+  .tweet-action:hover {
+    color: #1da1f2;
+  }
+  
+  .tweet-action i {
+    margin-right: 0.5rem;
+  }
+  
+  .tweet-action:last-child {
+    margin-right: 0;
+  }
+  
+  textarea{
+    padding: 14px;
+    outline: none;
+    /* display: flex; */
+    /* justify-content: left; */
+    align-items: center;
+    height: 23vh;
+    font-size: 20px;
+    width: 52vw;
+    font-weight: 500;
+    color: black;
+    margin: 7vh 0px;
+    background: #ffffff;
+  }
+
+  .write-post{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .write-post>button{
+    top: 9vh;
+    position: relative;
+    width: 11vw;
+    margin: 21px;
+    padding: 16px 10px;
+    font-size: 20px;
+  }
+
+  main{
+    padding: 21px;
+  }
