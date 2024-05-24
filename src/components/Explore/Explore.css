@@ -1,43 +1,91 @@
-.h-1{
-    font-weight: 600;
-    font-size: 22px;
-    margin: 5vh auto 2vh;
-}
-
-.h-2{
-    font-size: 18px;
-    color: #515151;
-}
-
-.input-container{
-    gap: 22px;
-    flex-direction: column;
-    display: flex;
-    margin: 9vh auto;
-}
-
-.form-que{
+.explore-home{
+    background-size: cover;
+    background-position: center;
     margin: auto;
-    width: 75vw;
+    z-index: -2;
+    left: 0vw;
+    position: relative;
+    padding: 42vh 0px;
+    top: -13vh;
+    background-image: url(//open-meteo.com/images/mountains2.1.webp);
+}
+
+.heading-home{
+    color: white;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.subhead-home{
+    width: 62vw;
+    margin: 29px auto;
+    color: white;
+    font-size: 26px;
+    text-shadow: 0px 6px 2px black;
+}
+
+
+
+.grid-input{
+    margin: 9vh auto;
+    width: 84vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px;
+}
+
+.row{
+    width: 27vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 19px;
+}
+
+.row>label{    
+    color: black;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.form-check>label{
+    color: black;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.form-check>input{
+    width: 3vw;
+}
+.form-check-grid{
+    gap: 11px;
+    width: 89vw;
+}
+.form-check{
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    width: 24vw;
 }
-
-.ques{
-    font-weight: 700;
-    font-size: 24px;
-
-}
-
-.ans{
-    width: 50%;
-}
-
 input{
-    font-weight: 500;
-    font-size: 21px;
-    border: none;
-    outline: none;
-    padding: 9px;
     border-radius: 3px;
-    width: 39%;
+    border: 1px solid black;
+    outline: none;
+    width: 12vw;
+    padding: 6px;
+    background: #e6e6e6;
+}
+
+option{
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+}
+
+select{
+    font-size: 16px;
+    padding: 5px;
+    background: #e6e6e6;
 }

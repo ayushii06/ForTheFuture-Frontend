@@ -18,6 +18,7 @@ function Navbar() {
                     <li><Link to="/explore">Explore Data</Link></li>
                     <li><Link to="/quiz">Get Involved</Link></li>
                     <li><Link to="/resource">Resources</Link></li>
+                    <li><Link to="/resource">Community</Link></li>
                 </ul>
 
                 <div className="visible">

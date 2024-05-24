@@ -3,3 +3,21 @@
     width: 70vw;
     font-size: 22px;
 }
+
+.instruction{
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    padding: 29px;
+}
+
+.ol{
+    text-align: left;
+    padding: 0px 24px;
+}
+
+.ol>p{
+    font-size: 17px;
+    color: gray;
+    font-weight: 400;
+}
