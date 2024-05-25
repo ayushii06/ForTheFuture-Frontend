@@ -13,9 +13,13 @@ const TemperatureChart = ({ data ,variables}) => {
     apparent_temperature_max: 'rgba(153, 102, 255, 0.5)',
     apparent_temperature_min: 'rgba(255, 159, 64, 0.5)',
     apparent_temperature_mean: 'rgba(255, 205, 86, 0.5)',
-    // Add more colors for other variables as needed
+    sunrise: 'rgba(255, 105, 86, 0.5)',
+    sunset: 'rgba(255, 95, 86, 0.5)',
+    daylight_duration: 'rgba(255, 205, 186, 0.5)',
+    sunshine_duration: 'rgba(255, 205, 186, 0.5)',
+    weather_code: 'rgba(25, 205, 86, 0.5)',
+
   };
-  console.log(data.time)
   const chartData = {
     labels: data.time,
     datasets: variables.map(variable => ({

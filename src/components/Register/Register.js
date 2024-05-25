@@ -16,7 +16,7 @@ function Register() {
     }
   const handleSubmit = async(e)=>{
     e.preventDefault();
-    const response = await fetch("http://localhost:10000/api/v1/signup", {
+    const response = await fetch("https://forthefuture.onrender.com/api/v1/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

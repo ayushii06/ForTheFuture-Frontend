@@ -1,18 +1,16 @@
 .head{
     text-align: left;
-    font-size: 18px;
+    font-size: 22px;
     padding: 10px;
     margin: auto;
-    width: 92vw;
-
-
+    width: 71vw;
 }
 
 .bold-center{
     text-align: left;
     font-size: 35px;
     padding: 10px 58px;
-    color: #184884;
+    color: #1b98ac;
     margin: auto;
     font-weight: 700;
   
@@ -64,4 +62,20 @@
     width: 48vw;
     justify-content: space-between;
     padding: 12px;
+}
+
+.section{
+    padding: 21px;
+    width: 80vw;
+    text-align: center;
+    margin: 7vh auto;
+    background: white;
+}
+
+bold{
+    font-weight: 600;
+}
+
+.head>div{
+    margin: 3vh auto;
 }

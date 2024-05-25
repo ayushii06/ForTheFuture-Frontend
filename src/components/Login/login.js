@@ -14,7 +14,7 @@ const Login=()=> {
   }
   const handleSubmit = async (e) => {
   
-      const response = await fetch("http://localhost:10000/api/v1/login", {
+      const response = await fetch("https://forthefuture.onrender.com/api/v1/login", {
           method: "POST",
           headers: {
               "Content-Type": "application/json",

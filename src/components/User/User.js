@@ -1,6 +1,6 @@
 import React from 'react'
 import './User.css'
-import { useNavigate } from 'react-router-dom'
+import {Link, useNavigate } from 'react-router-dom'
 
 function User() {
   let navigate=useNavigate();
@@ -8,13 +8,12 @@ function User() {
   let names = localStorage.getItem('name')
   let email = localStorage.getItem('email')
   let age = localStorage.getItem('age')
-  let gender = localStorage.getItem('gender')
  
    function handleClick(){
     localStorage.removeItem('token')
     localStorage.removeItem('name')
     localStorage.removeItem('email')
-    navigate('/')
+    navigate('/register')
    }
 
   return (
@@ -45,18 +44,11 @@ function User() {
                 </div>
                 <input type="email" value={age}/>
             </div>
-
-            <div className="main-heading">
-                <div className="upper-heading">
-                    <h4 className='bold-black'>Gender</h4>
-                    <h5>Edit</h5>
-                </div>
-                <input type="email" value={gender}/>
+            <div className='btn-container'>
+            <Link  onClick={handleClick} className="text-center btns font-bold" to="/register" role="button">Logout</Link> 
             </div>
-            <div onClick={handleClick} className="text-center btns font-bold" to="/register" role="button">Logout</div>
     
         </div>
-   
     </>
   )
 }

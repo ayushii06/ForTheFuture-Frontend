@@ -43,6 +43,8 @@ function Resource() {
                 <img className="" src={img16} />
                 <img className="" src={img17} />
               </div>
+
+              <p className="">For more information visit the official site of <Link to=''>UN</Link></p>
     </div>
   )
 }

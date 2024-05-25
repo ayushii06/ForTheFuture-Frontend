@@ -23,8 +23,8 @@ function Community() {
       
      
         e.preventDefault();
-        const response = await fetch("http://localhost:10000/api/v1/posts",{
-          origin:"http://localhost/10000",
+        const response = await fetch("https://forthefuture.onrender.com/api/v1/posts",{
+          origin:"https://forthefuture.onrender.com",
           mode:"cors",
           method:"POST",
           headers:{
@@ -51,7 +51,7 @@ function Community() {
 
     const getAllBlogs = async () => {
       //API CALL
-      const response = await fetch("http://localhost:10000/api/v1/posts", {
+      const response = await fetch("https://forthefuture.onrender.com/api/v1/posts", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

@@ -1,6 +1,5 @@
 import React from 'react'
 import user from '../../assets/svg/user.svg'
-// import logo from '../../assets/logo.png'
 import "./Navbar.css"
 import { Link } from 'react-router-dom'
 
@@ -9,9 +8,6 @@ function Navbar() {
     return (
         <>
             <div className="navbar">
-                {/* <div className="svg-sidebar">
-                    <img alt="" id="bar" className="image-svg user" />
-                </div> */}
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About Us</Link></li>

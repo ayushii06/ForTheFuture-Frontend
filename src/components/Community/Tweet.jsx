@@ -17,8 +17,8 @@ const Tweet = (props) => {
     const [display,setDisplay]=useState(false)
     const [listdisplay,setListDisplay]=useState(false)
     async function handleLike(){
-      const response = await fetch(`http://localhost:10000/api/v1/posts/${id}/like`, {
-        origin:"http://localhost/10000",
+      const response = await fetch(`https://forthefuture.onrender.com/api/v1/posts/${id}/like`, {
+        origin:"https://forthefuture.onrender.com",
           mode:"cors",
           method:"PUT",
           headers:{
@@ -40,7 +40,7 @@ const Tweet = (props) => {
      async function handleSubmit(){
       setDisplay(false)
       setListDisplay(true)
-      const response = await fetch(`http://localhost:10000/api/v1/posts/${id}/comment`, {
+      const response = await fetch(`https://forthefuture.onrender.com/api/v1/posts/${id}/comment`, {
       origin:"http://localhost/10000",
         mode:"cors",
         method:"POST",

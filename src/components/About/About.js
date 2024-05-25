@@ -3,28 +3,60 @@ import './About.css'
 
 function About() {
   return (
-    <div>
-        <p className='bold-center'>We're <span>LogicalVoids</span></p>
-        <p className='head'>We are a dynamic Duo of web development aficionados with a passion for crafting cutting-edge digital experiences. Our team combines expertise in front-end development, back-end logic, and user-centric design to deliver seamless and captivating web solutions. With a relentless pursuit of innovation and a commitment to excellence, we're poised to make a lasting impact at the hackathon and beyond.</p>
-        <div className='bold-center'>About WeHear</div>
-        <div>
-            <div className='about-ul'>
-            <div className='flex-out'>
-                <p className='bold'>Purpose</p> <p className='left-width'>Simplify online gadget shopping.</p>
-                </div>
-                <div className='flex-out'>
-                <p className='bold'>Inspiration</p> <p className='left-width'>Frustration with time-consuming online searches.</p> </div>
-                <div className='flex-out'>   <p className='bold'>Functionality</p> <p className='left-width'>Personalized search for tech products within specified conditions</p> </div>
-                <div className='flex-out'>  <p className='bold'>Unique Selling Point</p> <p className='left-width'>Tailored recommendations, saving time and effort.</p> </div>
-                <div className='flex-out'> <p className='bold'>Benefits</p> <p className='left-width'>Efficient, hassle-free shopping experience.</p> </div>
-                <div className='flex-out'> <p className='bold'>User Experience</p> <p className='left-width'>Intuitive interface, seamless navigation.</p> </div>
-                <div className='flex-out'> <p className='bold'>Target Audience</p> <p className='left-width'>Anyone looking to buy gadgets online.</p> </div>
-                <div className='flex-out'> <p className='bold'>Future Plans</p> <p className='left-width'>Expand to include more product categories and enhance user customization options.</p> </div>
-            </div>
-        </div>
-        <div className='center'>For judges</div>
-        <p className='disclaimer'>The output of searches sometimes might show error. This is because the output of OpenAI is not in perfect JSON format always. Please refresh the page in that case.</p>
-    </div>
+    <>
+      <div className='section'>
+        <p className='bold-center'>Inspiration</p>
+        <p className='head'>We were inspired by the need to make climate data more accessible, engaging, and actionable for everyone. Our goal is to empower individuals with the knowledge and tools they need to understand the impacts of climate change and contribute to global sustainability efforts. By leveraging the power of data visualization and community engagement, we aim to foster a deeper connection between people and the planet, driving collective action for a sustainable future.</p>
+
+      </div>
+
+      <div className='section'>
+        <p className='bold-center'>What it does</p>
+        <p className='head'>It is a comprehensive platform that provides global climate data in an accessible and interactive format. It offers the following features:
+          <div className="">
+            <bold>Real-Time Climate Data : </bold><p className="">Access to the latest climate statistics and trends from trusted sources.
+              Interactive Maps and Graphs: Visualizations that help users understand climate changes in different regions over time.</p>
+          </div>
+
+          <div className="">
+            <bold>Educational Content: </bold><p className=""> Articles and resources that explain key concepts related to climate science and sustainability.</p>
+          </div>
+
+          <div className="">
+            <bold>Community Engagement: </bold><p className="">A platform for users to share their thoughts, participate in discussions, and collaborate on sustainability projects.</p>
+          </div>
+
+          <div className="">
+            <bold>Climate Quiz: </bold><p className="">An engaging quiz that tests users' knowledge on climate change, including historical events and general knowledge facts, with a focus on the UN's 17 Sustainable Development Goals.</p>
+          </div>
+
+
+        </p>
+
+      </div>
+
+      <div className='section'>
+        <p className='bold-center'>How I built it</p>
+        <p className='head'>
+          <div className="">
+            <bold>Frontend : </bold><p className="">Built using React for dynamic and responsive user interfaces. The interactive visualizations are powered by D3.js and Chart.js.</p>
+          </div>
+          <div className="">
+            <bold>Backend : </bold><p className="">Developed with Node.js and Express.js to handle API requests, user authentication, and data management. MongoDB is used for storing user data, posts, comments, and likes.</p>
+          </div>
+          <div className="">
+            <bold>APIs and Data Sources : </bold><p className="">Integrated with various climate data APIs to fetch real-time data. The backend also includes endpoints for fetching and processing this data.</p>
+          </div>
+
+          <div className="">
+            <bold>Authentication : </bold><p className="">Implemented JWT (JSON Web Tokens) for secure user authentication and session management.</p>
+          </div>
+
+        </p>
+
+      </div>
+
+    </>
   )
 }
 

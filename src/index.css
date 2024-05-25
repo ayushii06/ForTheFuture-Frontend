@@ -1,54 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 .font-light {
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .font-regular {
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .font-bold {
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-/*   
-  .inria-sans-light-italic {
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .inria-sans-regular-italic {
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  } */
-  
-  .font-bold-italic {
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 
-  body{
-    background-color:  #ffffff;  
-  }
+.font-regular {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  *{
-   
-    margin: 0;
-    padding: 0;
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
+.font-bold {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
-  .text-center{
-    text-align: center;
-  }
+.font-bold-italic {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+* {
+
+  margin: 0;
+  padding: 0;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.text-center {
+  text-align: center;
+}
