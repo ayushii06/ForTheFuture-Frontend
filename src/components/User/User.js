@@ -13,7 +13,8 @@ function User() {
     localStorage.removeItem('token')
     localStorage.removeItem('name')
     localStorage.removeItem('email')
-    navigate('/register')
+    navigate('/')
+    alert('You are logged out')
    }
 
   return (

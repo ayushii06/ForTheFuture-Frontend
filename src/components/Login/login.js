@@ -30,9 +30,8 @@ const Login=()=> {
           
           localStorage.setItem('token', json.token)
           localStorage.setItem('username', json.user.username)
-        //   localStorage.setItem('email', json.user.email)
-        //   localStorage.setItem('password', json.user.password)
-        //   localStorage.setItem('mobile', json.user.mobile)
+          localStorage.setItem('email', json.user.email)
+          localStorage.setItem('age', json.user.age)
           console.log(json.token)
           navigate("/")
 
