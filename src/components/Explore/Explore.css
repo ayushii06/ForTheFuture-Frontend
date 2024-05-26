@@ -35,45 +35,46 @@
 }
 
 .row{
-    width: 27vw;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    gap: 19px;
+    gap: 15px;
 }
 
 .row>label{    
     color: black;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .form-check>label{
     color: black;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 21px;
 }
 
 .form-check>input{
-    width: 3vw;
+  
+    height: 24px;
+    width: 6vw;
 }
 .form-check-grid{
-    gap: 11px;
-    width: 89vw;
+    gap: 24px;
 }
 .form-check{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 24vw;
 }
 input{
     border-radius: 3px;
     border: 1px solid black;
     outline: none;
-    width: 12vw;
+    width: 15vw;
     padding: 6px;
     background: #e6e6e6;
+    font-size: 19px;
+    font-weight: 400;
 }
 
 option{
@@ -85,7 +86,7 @@ option{
 }
 
 select{
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px;
     background: #e6e6e6;
 }

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../Home/Home.css'
-import Footer from '../Footer/Footer'
 import { useNavigate } from 'react-router-dom'
 import earth from '../../assets/HomePageAssets/earth.jpg'
 import trend from '../../assets/HomePageAssets/trends.jpg'
@@ -14,33 +13,6 @@ const Home = () => {
   function handleClick(){
     navigate('/login')
   }
-// const productInitial=[]
-//   const [products,setProducts]=useState(productInitial)
-
-//   let tokens = localStorage.getItem('token')
-
-//   const handleResponse = async()=>{
-//   const response = await fetch("http://localhost:5050/api/v1/product/getSearch", {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json",
-//             },
-//             body: JSON.stringify({token :tokens}),
-
-//         });
-//         const json = await response.json();
-//         const data = await json.data;
-//         console.log(data)
-//         setProducts(data)
-//         console.log(products)
-       
-//   }
-
-  
-//   useEffect(()=>{
-//     handleResponse()
-   
-//   },[])
   return (
     <>
     <div className='home-container'>
@@ -87,11 +59,12 @@ understand the complex dynamics of our changing climate, so together, we can tak
       <img className="" src={community} />
       </div>
     </div> 
+    {localStorage.getItem('token')?<></>:<>
     <div className="sign-up-header">Sign up for our newsletter to receive updates on the latest climate research, events, and opportunities to get involved.</div>
   
     <Link className="text-center btns font-bold" to="/register" role="button">Sign Up</Link> 
     <p style={{margin:"6vh auto 14vh",
-    fontSize: "22px"}} className="text-center font-light">Already have an account?<span className='login-link font-bold' onClick={handleClick}>Log In</span></p>
+    fontSize: "22px"}} className="text-center font-light">Already have an account?<span className='login-link font-bold' onClick={handleClick}>Log In</span></p></>}
     </div>
     </>
   )

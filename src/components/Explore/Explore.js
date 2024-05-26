@@ -58,7 +58,6 @@ function Explore() {
     let parsedData = await response.json();
     setSuccess(true);
     setData(parsedData.daily);
-    console.log(parsedData)
   };
 
   return (

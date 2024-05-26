@@ -139,6 +139,14 @@ write-post {
   color: white;
 }
 
+.write-post-toggle>img{
+  left: 42vw;
+  top: 1vh;
+  position: absolute;
+  width: 5vh;
+cursor: pointer;
+}
+
 .write-post-btn{
   position:absolute;
 }

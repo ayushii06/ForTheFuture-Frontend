@@ -44,7 +44,7 @@ function Resource() {
                 <img className="" src={img17} />
               </div>
 
-              <p className="">For more information visit the official site of <Link to=''>UN</Link></p>
+              <p className="">For more information visit the official site of <Link to='https://sdgs.un.org/goals'>UN</Link></p>
     </div>
   )
 }

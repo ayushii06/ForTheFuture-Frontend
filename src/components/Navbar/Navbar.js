@@ -18,7 +18,7 @@ function Navbar() {
                 </ul>
 
                 <div className="visible">
-                    {localStorage.getItem('token')?<Link to='/user'><img className="image-svg user" src={user} alt="" /></Link>:<Link to='/register'><img className="image-svg user" src={user} alt="" /></Link>}
+                    {localStorage.getItem('token')?<Link to='/user'><img className="image-svg user" src={user} alt=""/></Link>:<Link to='/register'><img className="image-svg user" src={user} alt="" /></Link>}
                     </div>
             </div>
         </>
